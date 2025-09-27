@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  # Database
+  database:
+    image: postgres:13
+    container_name: filevault-postgres
+    environment:
+      POSTGRES_DB: filevault
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # Backend API
+  backend:
+    build: ./backend
+    container_name: filevault-backend
+    environment:
+      - DB_HOST=database
+      - DB_USER=admin
+      - DB_PASSWORD=password
+      - DB_NAME=filevault
+      - DB_PORT=5432
+      - JWT_SECRET=your-super-secret-jwt-key
+      - PORT=8080
+    ports:
+      - "8080:8080"
+    depends_on:
+      - database
+    volumes:
+      - ./backend/uploads:/app/uploads
+
+  # Frontend
+  frontend:
+    build: ./frontend
+    container_name: filevault-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:
