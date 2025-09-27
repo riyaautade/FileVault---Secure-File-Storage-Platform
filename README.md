@@ -1,20 +1,6 @@
 # 🗂️ FileVault - Secure File Storage & Sharing System
 
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/2xw7QaEj)
-
-# Demo Video Link:
-
-Demo Video Link: https://drive.google.com/drive/folders/1r8RUgNLtpn4YI3hfNZsSXGD-4HruJium?usp=sharing
-
-I couldn't properly do docker and cloud deployment on time, so hopefully this demo video should work, thank you.
-
-# Documents
-
-All the required documents are in the 'docs' folder
-
-# FileVault
-
-**FileVault** is a modern, secure file storage and sharing system designed for efficient file management with enterprise-grade features. Built with Go, React, and PostgreSQL, it offers file deduplication, real-time collaboration, and comprehensive analytics.
+FileVault is a modern, secure file storage and sharing system designed for efficient file management with enterprise-grade features. Built with Go, React, and PostgreSQL, it offers file deduplication, real-time collaboration, and comprehensive analytics.
 
 ## ✨ Key Features
 
