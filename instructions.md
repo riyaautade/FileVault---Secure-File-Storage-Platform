@@ -1,6 +1,3 @@
-# Contributing to FileVault
-
-Thank you for your interest in contributing to FileVault! This document provides guidelines and information for contributors to help maintain code quality and ensure smooth collaboration.
 
 ## Table of Contents
 1. [Getting Started](#getting-started)
